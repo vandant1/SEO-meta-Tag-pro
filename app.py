@@ -11,6 +11,15 @@ def inject_custom_js():
     with open(js_file) as f:
         st.markdown(f"<script>{f.read()}</script>", unsafe_allow_html=True)
 
+
+def inject_adsense():
+    adsense_code = """
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172078140684644"
+     crossorigin="anonymous"></script>
+    """
+    st.markdown(adsense_code, unsafe_allow_html=True)
+
+
 def generate_meta_tags(title, description, url, keywords):
     meta_tags = f"""<!-- SEO Meta Tags -->
     <title>{title}</title>
