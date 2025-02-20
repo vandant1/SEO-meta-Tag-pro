@@ -1,0 +1,130 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(135deg, #7596c9 0%, #c3cfe2 100%);
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #4b6cb7, #182848);
+    color: white !important;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.stTextInput>div>div>input, 
+.stTextArea>div>textarea {
+    border-radius: 10px !important;
+    padding: 12px 15px !important;
+    border: 2px solid #e0e0e0 !important;
+    transition: all 0.3s ease;
+}
+
+.stTextInput>div>div>input:focus, 
+.stTextArea>div>textarea:focus {
+    border-color: #4b6cb7 !important;
+    box-shadow: 0 0 8px rgba(75, 108, 183, 0.3) !important;
+}
+
+/* Generate Button */
+.stButton>button {
+    width: 100%;
+    border: none;
+    background: linear-gradient(45deg, #4b6cb7, #182848);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(75, 108, 183, 0.4);
+}
+
+/* Meta Tags Preview */
+.code-block {
+    position: relative;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    font-family: 'Fira Code', monospace;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #182848;
+}
+
+/* Preview Section */
+.preview-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.social-preview {
+    border-left: 4px solid #4b6cb7;
+    padding-left: 1rem;
+}
+
+.google-preview {
+    border-left: 4px solid #34a853;
+    padding-left: 1rem;
+}
+
+/* Sidebar Styles */
+.stSidebar {
+    background: linear-gradient(180deg, #848aa0 0%, #f8f9fa 100%);
+    padding: 1rem;
+    border-right: 1px solid #e0e0e0;
+}
+
+.premium-card {
+    background: linear-gradient(45deg, #9cdfae, #e4ece4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .stButton>button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
